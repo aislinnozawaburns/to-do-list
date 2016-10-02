@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 50px 100px;
+  background: rgb(240, 240, 240);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#new-task-body {
+  width: 450px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding-left: 20px;
+  box-shadow: lightgray;
+}
+
+button {
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(34, 154, 220);
+}
+
+li {
+  list-style-type: none;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.task {
+  font-size: 20px;
+}
+
+input:checked + span {
+  opacity: 0.2;
+  text-decoration: line-through;
+}
+/*
+<div id="tasks">
+<!--
+<div class="task">
+<li>
+  <label>
+    <input type="checkbox">
+    <span>Buy some milk</span>
+  </label>
+</li>
+</div>
+-->
+</div>*/

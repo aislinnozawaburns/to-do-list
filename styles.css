@@ -10,6 +10,13 @@ h1 {
   font-size: 40px;
 }
 
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 35px;
+  color: lightgray;
+}
+
 #new-task-body {
   width: 450px;
   height: 40px;
@@ -42,6 +49,10 @@ li {
 input:checked + span {
   opacity: 0.2;
   text-decoration: line-through;
+}
+
+span {
+  margin-left: 10px;
 }
 /*
 <div id="tasks">

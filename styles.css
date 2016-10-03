@@ -8,6 +8,15 @@ body {
 
 h1 {
   font-size: 40px;
+  width: 450px;
+  margin: 0;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+p {
+display: inline-block;
+font-size: 30px;
 }
 
 h2 {

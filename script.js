@@ -37,6 +37,24 @@ placeHolderInList.style.display = "none";
 }
 
 
+var taskCount = document.querySelector("#count");
+var count = parseInt(taskCount.textContent);
+
+newTask.addEventListener("submit", incrementCount);
+
+function incrementCount(event) {
+  event.preventDefault();
+  count = parseInt(taskCount.textContent);
+  taskCount.textContent = count + 1;
+
+}
+
+
+//
+// <p> <span id="count"> 0 </span> todos </p>
+
+
+
 //get rid of "nothing to do"//
 
 

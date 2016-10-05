@@ -1,4 +1,4 @@
-//submit new task//
+//submit task
 var newTask = document.querySelector("#new-task");
 var newTaskBody = document.querySelector("#new-task-body");
 var tasks = document.querySelector("#tasks");
@@ -8,12 +8,13 @@ newTask.addEventListener("submit", addTask);
 function addTask(event) {
   event.preventDefault();
 
+
 var task = document.createElement("div");
 var li = document.createElement("li");
 var label = document.createElement("label");
 var input = document.createElement("input");
 input.type = "checkbox";
-input.class = "checkbox"
+input.class = "checkbox";
 var span = document.createElement("span");
 
 task.classList.add("task");
@@ -34,9 +35,21 @@ newTask.reset();
 
 var placeHolderInList = document.querySelector("h2");
 placeHolderInList.style.display = "none";
+
 }
 
+// Bonus: comma split
+// var input = newTaskBody.textContent;
+// var inputArray = input.split(",");
+//
+// for (var i=0; i <inputArray.length; i++) {
+//   inputArray[i];
+//
+//   inputArray.textContent = inputArray[i];
+//
+// }
 
+//Task Count
 var taskCount = document.querySelector("#count");
 var count = parseInt(taskCount.textContent);
 
@@ -48,35 +61,3 @@ function incrementCount(event) {
   taskCount.textContent = count + 1;
 
 }
-
-
-//
-// <p> <span id="count"> 0 </span> todos </p>
-
-
-
-//get rid of "nothing to do"//
-
-
-
-/*
-<div id="tasks">
-<!--
-<div class="task">
-<li>
-  <label>
-    <input type="checkbox">
-    <span>Buy some milk</span>
-  </label>
-</li>
-</div>
--->
-</div>*/
-
-//
-// <li>
-//   <label>
-//     <input type="checkbox">
-//     <span>Buy some milk</span>
-//   </label>
-// </li>
